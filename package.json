@@ -1,0 +1,24 @@
+{
+  "name": "10up-technical-challenge",
+  "version": "1.0.0",
+  "description": "10Up Technical Challenge",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.1",
+    "mini-css-extract-plugin": "^1.3.4",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.1",
+    "webpack": "^5.14.0",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "dev": "webpack --mode=development",
+    "serve": "npm run dev && webpack serve"
+  },
+  "author": "Anthony",
+  "license": "ISC"
+}
