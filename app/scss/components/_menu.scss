@@ -1,12 +1,44 @@
+#menu {
+  position: absolute;
+  right: 4rem;
+}
+
 .menu-icon {
+  content: "";
+  display: block;
   width: 4rem;
   height: 4rem;
+  background-image: url('../../assets/icons/Icon_Menu.svg');
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
-.menu-active {
-  display: block;
+.menu-icon--active {
+  background-image: url('../../assets/icons/Icon_Close.svg');
+  background-repeat: no-repeat;
+  transform: translate(250px, -12px);
 }
 
-.menu-hidden {
+.menu-list {
   display: none;
+  list-style-type: none;
+  background-color: $darkBg;
+  width: 30rem;
+  padding: 3rem;
+
+  li {
+    height: 6rem;
+    line-height: 6rem;
+
+    a {
+      color: $white;
+      font-size: 2.8rem;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $seafoam;
+      }
+    }
+  }
 }

@@ -4,13 +4,14 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   padding: 3rem;
   padding-top: 12rem;
   overflow: hidden;
 
   @include device-large {
     flex-direction: row;
+    height: 100vh;
     padding-top: 3rem;
   }
 
@@ -26,7 +27,6 @@
     }
 
     &--alternate {
-
       @include device-large {
         flex: 1.8;
       }
@@ -43,9 +43,10 @@
   }
 
   &__image {
-    width: 50vh;
+    display: none;
 
     @include device-large {
+      display: block;
       width: 100%;
     }
   }
@@ -57,9 +58,15 @@
   &__link {
     color: $white;
     font-family: 'Montserrat Medium';
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-decoration: none;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid $white;
+
+    &:hover,
+    &:focus {
+      color: $seafoam;
+      border-color: $seafoam;
+    }
   }
 }
