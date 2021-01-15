@@ -17,6 +17,7 @@
   },
   "scripts": {
     "dev": "webpack --mode=development",
+    "build": "webpack --mode=production",
     "serve": "npm run dev && webpack serve"
   },
   "author": "Anthony",
