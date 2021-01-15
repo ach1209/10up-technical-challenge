@@ -1,13 +1,18 @@
 .pill-btn {
-  display: inline-block;
+  display: block;
   height: 100%;
   color: $white;
   font-family: 'Montserrat Medium';
   font-size: 2rem;
   text-decoration: none;
+  text-align: center;
   padding: 2rem;
   border: 1px solid $white;
   border-radius: 10rem;
+
+  @include device-large {
+    display: inline-block;
+  }
 
   &:hover,
   &:focus {

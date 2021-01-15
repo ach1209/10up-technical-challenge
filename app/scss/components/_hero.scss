@@ -53,6 +53,15 @@
 
   &__footer {
     margin-top: 5rem;
+
+    &-item {
+      margin-bottom: 3rem;
+      text-align: center;
+
+      @include device-large {
+        display: inline;
+      }
+    }
   }
 
   &__link {
